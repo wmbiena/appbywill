@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Quote App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photography Service & Quote App</h1>
+        
+        <div id="questionnaire-section">
+            <h2>Pre-Consulting Questionnaire</h2>
+            <form id="questionnaire-form">
+                <label for="clientName">Your Full Name:</label>
+                <input type="text" id="clientName" required>
+                
+                <label for="sessionType">Type of Session (e.g., family, portrait):</label>
+                <input type="text" id="sessionType" required>
+                
+                <label for="idealDate">Ideal Date:</label>
+                <input type="text" id="idealDate" required>
+                
+                <label for="sessionLocation">Preferred Location:</label>
+                <input type="text" id="sessionLocation">
+                
+                <label for="sessionGoal">Main Goal or Vision:</label>
+                <textarea id="sessionGoal" rows="4"></textarea>
+
+                <button type="submit">Submit and View Packages</button>
+            </form>
+        </div>
+
+        <div id="quote-section" style="display: none;">
+            <h2>Choose Your Package</h2>
+            <div id="recommendation"></div>
+            
+            <div id="package-options">
+                </div>
+            
+            <div class="custom-quote-option">
+                <h3>Or Build a Custom Quote</h3>
+                <label for="customDuration">Hours:</label>
+                <input type="number" id="customDuration" min="1" value="1">
+                
+                <label for="customPhotos">Photos:</label>
+                <input type="number" id="customPhotos" min="1" value="15">
+                
+                <label for="customOutfits">Outfits:</label>
+                <input type="number" id="customOutfits" min="1" value="1">
+
+                <button id="calculateCustom">Calculate Custom Quote</button>
+            </div>
+            
+            <div id="quote-result">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
